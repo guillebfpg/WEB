@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tres en raya</title>
+    
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="JS/script.js" class="javascript"></script>
+</head>
+    <body>
+        <div id="titulo">
+            <h1>Tic Tac Toe</h1>
+        </div>
+        <div id="contenedor">
+            <div id="fila1">
+                <div id="uno" onclick="jugar('#uno')"></div><div id="dos" onclick="jugar('#dos')"></div><div id="tres" onclick="jugar('#tres')"></div>
+            </div>
+            <div id="fila2">
+                <div id="cuatro" onclick="jugar('#cuatro')"></div><div id="cinco" onclick="jugar('#cinco')"></div><div id="seis" onclick="jugar('#seis')"></div>
+            </div>
+            <div id="fila3">
+                <div id="siete" onclick="jugar('#siete')"></div><div id="ocho" onclick="jugar('#ocho')"></div><div id="nueve" onclick="jugar('#nueve')"></div>
+            </div>
+        </div>
+        <br>
+        <div id="cajabtn">
+            <div id="boton" onclick="location.reload();">Reiniciar</div>
+        </div>
+        <!----------------------------------------->
+        <!--Ventana emergente-->
+        <div id="venX" class="ven">
+            <div class="c-ven">
+                <h1>¡El ganador es X!</h1>
+                <div class="btn-c-ven">
+                    <div class="btn-close" onclick="closet('#venX')">CERRAR</div>
+                    <div class="btn-reload" onclick="location.reload();">REINICIAR</div>
+                </div>
+            </div>
+        </div>
+        <div id="venO" class="ven">
+            <div class="c-ven">
+                <h1>¡El ganador es O!</h1>
+                <div class="btn-c-ven">
+                    <div class="btn-close" onclick="closet('#venO')">CERRAR</div>
+                    <div class="btn-reload" onclick="location.reload();">REINICIAR</div>
+                </div>
+            </div>
+        </div>
+        <div id="venE" class="ven">
+            <div class="c-ven">
+                <h1>¡EMPATE!</h1>
+                <div class="btn-c-ven">
+                    <div class="btn-close" onclick="closet('#venE')">CERRAR</div>
+                    <div class="btn-reload" onclick="location.reload();">REINICIAR</div>
+                </div>
+            </div>
+        </div>
+        <div id="venA" class="ven">
+            <div class="c-ven">
+                <h1>¡Casilla ocupada!</h1>
+                <div class="btn-c-ven" style="justify-content: center">
+                    <div class="btn-close" onclick="closet('#venA')">&nbsp;CERRAR&nbsp;</div>
+                </div>
+            </div>
+        </div>
+        <!----------------------------------------->
+    </body>
+</html>

@@ -1,0 +1,143 @@
+
+html { 
+  background: url(https://img.freepik.com/vector-gratis/fondo-geometrico_23-2148573776.jpg?size=626&ext=jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#contenedor {
+    text-align: center;
+    width: 310px;
+    margin: auto;
+}
+#titulo {
+    margin-top: 100px;
+    text-align: center;
+}
+
+h1 {
+    font-family: fantasy;
+}
+
+#fila1 div,
+#fila2 div,
+#fila3 div {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 90px;
+    font-family: sans-serif;
+}
+
+#uno:hover,
+#dos:hover,
+#tres:hover,
+#cuatro:hover,
+#cinco:hover,
+#seis:hover,
+#siete:hover,
+#ocho:hover,
+#nueve:hover {
+    background-color: #ffd902;
+}
+
+#cajabtn {
+    text-align: center;
+}
+
+#boton {
+    margin: auto;
+    width: 250px;
+    border-radius: 100px;
+    border: 2px solid black;
+    background-color: #ffd902;
+    font-family: sans-serif;
+}
+
+#boton:hover {
+    background-color: #ffb702;
+}
+
+
+/*--------------------*/
+/*Ventana emergente*/
+#venX{
+    display: none;
+}
+
+#venO{
+    display: none;
+}
+
+#venE{
+    display: none;
+}
+
+#venA{
+    display: none;
+}
+
+.ven{
+    background-color: rgba(0,0,0,0.50);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-family: sans-serif;
+}
+
+.ven div h1{
+    font-size: 2rem;
+}
+.c-ven{
+    width: 40%;
+    padding: 5%;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.80);
+    text-align: center;
+
+}
+
+.btn-c-ven{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 15px;
+}
+
+.btn-reload{
+    background-color: rgba(255,217,2,0.30);
+    /*#ffd902*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 35px;
+    border: 1px solid black;
+}
+
+.btn-reload:hover{
+    background-color: rgba(255,217,2,0.70);
+    /*#ffb702*/
+}
+
+.btn-close{
+    background-color: rgba(255,255,255,0.30);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 35px;
+    border: 1px solid black;
+}
+
+.btn-close:hover{
+    background-color: rgba(255,255,255,0.70);
+}
+
+/*--------------------*/
